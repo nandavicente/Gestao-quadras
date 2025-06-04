@@ -8,7 +8,7 @@ Aplicação web completa para gestão de quadras de areia (Beach Tennis, Futevô
 
 ### Core
 - Cadastro e gestão de **quadras** (3 quadras de areia)
-- Escolha de **modalidade** (Beach Tennis, Futevôlei, Vôlei)
+- Escolha de **modalidade** (Beach Tennis, Futevôlei, Peteca, Vôlei)
 - **Agendamento** de aulas ou aluguéis
 - Gestão de **professores** e seus horários
 - Visualização da **agenda por quadra e por dia**
