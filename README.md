@@ -1,6 +1,6 @@
 #  Sistema de Agendamento de Quadras com IA e WhatsApp
 
-Aplicação web completa para gestão de quadras de areia (Beach Tennis, Futevôlei, Vôlei), com suporte a agendamentos de aulas e aluguéis, atendimento automático via WhatsApp Business API.
+Aplicação web completa para gestão de quadras de areia.
 ---
 
 ##  Funcionalidades Principais
@@ -54,6 +54,13 @@ Abaixo está o fluxo geral de funcionamento do sistema:
 - Campos para:
   - Data e hora
   - Nome do cliente
+- Relatórios no menu principal
+📊 Quatro sub-relatórios:
+  - Por quadra
+  - De aulas
+  - Pendências
+  - Resumo mensal
+
 
 ### Tela de Mensagens
 - Histórico de interações com usuários
