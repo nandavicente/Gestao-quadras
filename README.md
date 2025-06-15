@@ -1,7 +1,6 @@
 #  Sistema de Agendamento de Quadras com IA e WhatsApp
 
-Aplicação web completa para gestão de quadras de areia (Beach Tennis, Futevôlei, Vôlei), com suporte a agendamentos de aulas e aluguéis, atendimento automático via WhatsApp Business API e integração com IA (GPT-4) para interpretação e resposta de mensagens.
-
+Aplicação web completa para gestão de quadras de areia (Beach Tennis, Futevôlei, Vôlei), com suporte a agendamentos de aulas e aluguéis, atendimento automático via WhatsApp Business API.
 ---
 
 ##  Funcionalidades Principais
@@ -15,25 +14,27 @@ Aplicação web completa para gestão de quadras de areia (Beach Tennis, Futevô
 
 ###  Integração com WhatsApp Business API
 - Recebimento de mensagens via **webhook**
-- Resposta automática por IA e tentativa de **agendamento direto**
 - **Envio automático** de mensagens: confirmação, lembrete e cancelamento
 
-###  IA para Atendimento Inteligente
-- Utilização do **GPT-4 (OpenAI API)** para interpretar comandos como:
-  > “Quero alugar uma quadra pra beach tennis amanhã às 19h”
+---
+
+## 📊 Diagrama de Fluxo do Sistema
+
+Abaixo está o fluxo geral de funcionamento do sistema:
+
+![Fluxo do Sistema](docs/fluxo_gestao_quadras.png)
 
 ---
 
 ## 🧱 Tecnologias Utilizadas
 
-| Camada      | Tecnologia                         |
-|-------------|------------------------------------|
-| Backend     | Python + FastAPI                   |
-| Frontend    | React + TailwindCSS + shadcn/ui    |
-| Banco de Dados | PostgreSQL (ou SQLite para testes) |
-| IA          | OpenAI API (GPT-4)                 |
-| Integração  | Meta WhatsApp Business API         |
-| Deploy      | Railway (ou Render)                |
+| Camada        | Tecnologia                          |
+|---------------|-------------------------------------|
+| Frontend      | React + TailwindCSS (tema escuro)   |
+| Backend       | FastAPI (Python 3.11+)              |
+| Banco de Dados| PostgreSQL                          |
+| Integração    | API Oficial do WhatsApp (Meta)      |
+| Infraestrutura| Vite (desenvolvimento local)        |
 
 ---
 
@@ -60,19 +61,34 @@ Aplicação web completa para gestão de quadras de areia (Beach Tennis, Futevô
 - Envio manual de mensagens (opcional)
 
 ---
+## ⚙️ Como Executar o Projeto Localmente
 
-##  Executando Localmente
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
+   cd seu-repo
+   ```
 
-### Pré-requisitos
-- Python 3.10+
-- Node.js 18+
-- PostgreSQL (ou SQLite para testes)
-- Conta na [OpenAI](https://platform.openai.com/) e [Meta for Developers](https://developers.facebook.com/)
+2. **Instale as dependências do frontend**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
 
-### Backend
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
+3. **Execute o backend com FastAPI**
+   ```bash
+   cd backend
+   uvicorn main:app --reload
+   ```
+
+4. Acesse em seu navegador:
+   - Frontend: http://localhost:5173  
+   - Backend (API): http://localhost:8000/docs  
+
+---
+
+
+## 👤 Acesso
+
+O sistema será utilizado apenas por **um usuário administrador** com login único.
